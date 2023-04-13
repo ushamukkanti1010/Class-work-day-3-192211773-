@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main ( )
+{
+    int a,b,sum;
+    int *p1,*p2,*ps;
+    printf("enter the first number :");
+    scanf("%d",&a);
+    printf("enter the second number ;");
+    scanf("%d",&b);
+    p1=&a;
+    p2=&b;
+    ps=&sum;
+    
+    sum = *p1+*p2;
+    printf("\n sum of two number is :%u",*ps);
+    return 0;
+}
